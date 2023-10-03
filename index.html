@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mobile View -->
+    <nav class="Mobile__nav">
+      <div class="mobile-row">
+        <div class="Mobile__right">
+          <img src="./assets/Cookpal 1.svg" alt="logo" class="Mobile__logo" />
+        </div>
+        <div class="account__img">
+          <img src="./assets/Ellipse 2.png" alt="" />
+        </div>
+      </div>
+      <div class="Mobile__left">
+        <ul class="Mobile__nav-ul">
+          <li class="Mobile__nav-links">
+            <a href="#home" id="HomeNav">Home</a>
+          </li>
+          <li class="Mobile__nav-links">
+            <a href="#explore" id="ExploreNav">Explore</a>
+          </li>
+          <li class="Mobile__nav-links">
+            <a href="#help" id="HelpNav">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- NavBar OF Website -->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__right">
+          <img src="./assets/Cookpal 1.svg" alt="logo" class="header__logo" />
+        </div>
+        <div class="header__left">
+          <ul class="header___nav-ul">
+            <li class="header__nav-links"><a href="#home"></a>Home</li>
+            <li class="header__nav-links"><a href="#explore"></a>Explore</li>
+            <li class="header__nav-links"><a href="#help"></a>Help</li>
+          </ul>
+          <div class="account__img">
+            <img src="./assets/Ellipse 2.png" alt="Profile Pic" />
+          </div>
+        </div>
+        <div class="menu__icon">
+          <img src="./assets/menu.png" alt="HamBurgerMenu" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main" id="home">
+      <div class="hero container">
+        <div class="hero__img">
+          <div class="hero__text">
+            <h3>Trending Now</h3>
+            <h2>Mike's Famous Salad With Cheese</h2>
+            <p>By JOhn Mike</p>
+          </div>
+          <img src="./assets/Rectangle 20.png" alt="Main Banner" />
+        </div>
+        <div class="hero__search">
+          <div class="hero__search-heading">
+            <h2>Search For Recipies</h2>
+          </div>
+          <div class="hero__search-div">
+            <input
+              type="search"
+              placeholder="Search For Recipies"
+              id="search_input"
+              onkeyup="displaySearch()"
+            />
+            <img
+              src="./assets/li_search.svg"
+              alt="Search"
+              class="hero__search-btn"
+              onclick="displaySearch()"
+            />
+          </div>
+        </div>
+        <div class="hero__recipe-type" id="explore">
+          <div class="hero__first hero__card">
+            <p>All Recipies</p>
+            <img src="./assets/chevron.svg" alt="right Arrow" />
+          </div>
+          <div class="hero__second hero__card">
+            <p>Veg Recipies Only</p>
+            <img src="./assets/chevron.svg" alt="right Arrow" />
+          </div>
+          <div class="hero__third hero__card">
+            <p>Non Veg Recipies</p>
+            <img src="./assets/chevron.svg" alt="right Arrow" />
+          </div>
+        </div>
+      </div>
+      <div class="recipe container">
+        <div class="recipe__filter">
+          <h3>Filters</h3>
+          <h4>Rating</h4>
+          <div class="checkbox">
+            <input type="checkbox" name="fourAbove" id="four_above" /> 4 and
+            Above <br />
+            <input type="checkbox" name="fourBelow" id="four_below" /> 4 Below
+          </div>
+        </div>
+        <div class="recipe__grid">
+          <div class="recipe__recipe-grid"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer of the WebSite -->
+    <footer class="footer">
+      <div class="footer-1">
+        <div class="footer__div1">
+          <img src="./assets/Cookpal 1.svg" alt="logo" />
+          <p>
+            Cookpal is a recipe website with a wide variety of delicious
+            recipes, easy-to-use search function. Join our community and let's
+            cook together!
+          </p>
+        </div>
+        <div class="footer__div2">
+          <h4>Company</h4>
+          <ul class="footer__ul">
+            <li class="footer__links">Home</li>
+            <li class="footer__links">Explore</li>
+            <li class="footer__links">Team</li>
+            <li class="footer__links">About us</li>
+            <li class="footer__links">Activity</li>
+          </ul>
+        </div>
+        <div class="footer__div3">
+          <h4>Resources</h4>
+          <ul class="footer__ul">
+            <li class="footer__links">Blog</li>
+            <li class="footer__links">User Cases</li>
+            <li class="footer__links">Testinomials</li>
+            <li class="footer__links">Insights</li>
+          </ul>
+        </div>
+        <div class="footer__div4">
+          <img src="./assets/Cookpal 1.svg" alt="footer logo" />
+          <p>
+            Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+            aliquam.
+          </p>
+          <div class="email__input">
+            <div class="input__area">
+              <input
+                type="email"
+                name=""
+                placeholder="Your Email"
+                id="email_input"
+              />
+              <img src="./assets/Right Part.svg" alt="" />
+            </div>
+            <button class="subcibe-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <img src="./assets/Instagram.png" alt="" />
+        <img src="./assets/Facebook.png" alt="" />
+        <img src="./assets/Twitter.png" alt="" />
+        <img src="./assets/Linkedin.png" alt="" />
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
